@@ -72,7 +72,7 @@ func main() {
 		})
 
 		log.Println("The microservice bookkeeping-data-migration is started on port 8080")
-		errc <- http.ListenAndServe(":8080", nil)
+		errc <- http.ListenAndServe("localhost:8080", nil)
 	}()
 
 	log.Println("exit", <-errc)
