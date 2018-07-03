@@ -46,7 +46,7 @@ func main() {
 		// index endpoint
 		http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 			w.WriteHeader(http.StatusOK)
-			fmt.Fprintln(w, "Welcome to the first Limouzi meetup!")
+			fmt.Fprintln(w, "Welcome to the first Limouzi meetup !")
 		})
 
 		http.HandleFunc("/bank/search/", func(w http.ResponseWriter, r *http.Request) {
